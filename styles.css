@@ -1,0 +1,109 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.screen {
+    display: none; 
+}
+
+.screen.active {
+    display: block; 
+}
+.container,
+.dashboard-container {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    min-width: 320px;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #222;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.dashboard-container h2 {
+    color: #222;
+}
+
+#userList {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.user-row {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+body.login-bg {
+    background-image: url("images/login-bg.jpg.jpg");
+}
+
+body.admin-bg {
+    background-image: url("images/admin-bg.jpg.jpg");
+}
+
+body.user-bg {
+    background-image: url("images/user-bg.jpg.webp");
+}
+
+@media (max-width: 600px) {
+    .container, .dashboard-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
